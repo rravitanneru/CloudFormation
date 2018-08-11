@@ -14,7 +14,7 @@
 
 "GroupName" : "Consumer_Developer_ICS.NonProd",
       "Policies": [ {
-      "PolicyName" : "Consumer_Developer_ICS.NonProd policy",
+      "PolicyName" : "Consumer_Developer_ICS.NonProdpolicy",
       "PolicyDocument" : {
     "Version": "2012-10-17",
     "Statement": [
@@ -49,7 +49,7 @@
 
 "GroupName" : "Consumer_PowerUser_ICS.NonProd",
 "Policies"  : [ {
-     "PolicyName" : "Consumer_PowerUser_ICS.NonProd policy",
+     "PolicyName" : "Consumer_PowerUser_ICS.NonProdpolicy",
      "PolicyDocument" : {
     "Version": "2012-10-17",
     "Statement": [
