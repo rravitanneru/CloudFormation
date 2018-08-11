@@ -1,0 +1,82 @@
+{
+
+"AWSTemplateFormatVersion" : "2010-09-09",
+
+"Description" : "creating IAM Groups",
+
+"Resources" : {
+
+"Group1" : {
+
+"Type" : "AWS::IAM::Group",
+
+"Properties" : {
+
+"GroupName" : "Consumer_Developer_ICS.NonProd",
+      "Policies": [ {
+      "PolicyName" : "Consumer_Developer_ICS.NonProd policy",
+      "PolicyDocument" : {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sts:DecodeAuthorizationMessage",
+                "sts:GetCallerIdentity"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "sts:*",
+            "Resource": "arn:aws:iam::416006043109:role/Consumer_Developer"
+        }
+]
+}
+ }]
+
+}
+
+},
+
+"Group2" : {
+
+"Type" : "AWS::IAM::Group",
+
+"Properties" : {
+
+"GroupName" : "Consumer_PowerUser_ICS.NonProd",
+"Policies"  : [ {
+     "PolicyName" : "Consumer_PowerUser_ICS.NonProd policy",
+     "PolicyDocument" : {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sts:DecodeAuthorizationMessage",
+                "sts:GetCallerIdentity"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "sts:*",
+            "Resource": "arn:aws:iam::416006043109:role/Consumer_PowerUser"
+        }
+    ]
+}
+}]
+
+
+}
+
+}
+
+}
+
+}
