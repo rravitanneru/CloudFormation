@@ -31,7 +31,7 @@
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": "sts:*",
-            "Resource": "arn:aws:iam::416006043109:role/Consumer_Developer"
+            "Resource": "arn:aws:iam::xx-xxx-xxx-xxx:role/Consumer_Developer"
         }
 ]
 }
@@ -66,7 +66,7 @@
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": "sts:*",
-            "Resource": "arn:aws:iam::416006043109:role/Consumer_PowerUser"
+            "Resource": "arn:aws:iam::--x---x--xxxx-:role/Consumer_PowerUser"
         }
     ]
 }
